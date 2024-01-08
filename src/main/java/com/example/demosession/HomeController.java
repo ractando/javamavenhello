@@ -13,7 +13,7 @@ public class HomeController {
         return message;
     }
     @GetMapping("/error")
-    public String index() {
+    public String error() {
         return "You have envountered an error. Please check Application Logs for further action.";
     }
 }
