@@ -12,4 +12,8 @@ public class HomeController {
         int a = 1/0;
         return message;
     }
+    @GetMapping("/error")
+    public String index() {
+        return "You have envountered an error. Please check Application Logs for further action.";
+    }
 }
