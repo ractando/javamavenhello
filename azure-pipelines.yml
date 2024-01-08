@@ -35,7 +35,7 @@ stages:
       inputs:
         mavenPomFile: 'pom.xml'
         # We add jdkVersionOption to point to Java 17 for Maven
-        jdkVersionOption:1.17
+        jdkVersionOption: 1.17
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
