@@ -13,7 +13,7 @@ public class HomeController {
         int a = 1/0;
         }
         catch(Exception e){
-            system.out.println("ERROR" + e);
+            System.out.println("ERROR" + e);
         }
         return message;
     }
