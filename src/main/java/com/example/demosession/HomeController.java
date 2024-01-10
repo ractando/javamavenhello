@@ -8,7 +8,8 @@ public class HomeController {
     String message = "This is a deployment from Azure DevOps pipelines!";
 
     @GetMapping("/")
-    public String index() {   
+    public String index() {
+        int a = 1/0;
         return message;
     }
     @GetMapping("/error")
