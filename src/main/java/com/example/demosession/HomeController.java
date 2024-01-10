@@ -5,16 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-    String message = "This is a war file from Azure DevOps pipelines!";
+    String message = "This is a deployment from Azure DevOps pipelines!";
 
     @GetMapping("/")
-    public String index() {
-        try{
-            int a = 1/0;
-        }
-        catch(Exception e){
-            System.out.println(e);
-        }    
+    public String index() {   
         return message;
     }
     @GetMapping("/error")
