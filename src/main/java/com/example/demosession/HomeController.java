@@ -9,7 +9,10 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
-        int a = 1/0;
+        try{int a = 1/0;}
+        catch(Exception e){
+            System.out.println("ERROR" + e);
+        }
         return message;
     }
     @GetMapping("/error")
