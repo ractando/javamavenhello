@@ -9,6 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
+        int a = 1/0;
         return message;
     }
     @GetMapping("/error")
