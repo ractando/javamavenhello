@@ -67,3 +67,4 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+              customDeployFolder: 'ROOT'
